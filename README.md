@@ -113,7 +113,9 @@ MIT License or institutional license if applicable.
 
 ## 👨‍💻 Authors
 
-* Ravpreet Singh Gill (Project Lead)
+* Ravpreet Singh Gill
+* Hamza Latif
+* Cyrus Chan
 * AEGIS X architecture, governance scoring
 * NOVA ideation engine
 * UI design and visual analytics
