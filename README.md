@@ -1,10 +1,6 @@
 # Great_Agent_Hack_2025_EduAI
 Submission repo for GAH2025
 
-*Thinking...*
-
-> Oh! The user wants the GitHub markdown README that I created earlier, not the Python code. They want the actual markdown text that they can copy and paste into a README.md file on GitHub. Let me provide that.
-
 ```markdown
 # 🎓 Hybrid AI Tutor Security System
 
