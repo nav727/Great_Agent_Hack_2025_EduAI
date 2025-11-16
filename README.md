@@ -103,7 +103,7 @@ pip install langchain requests xml.etree pydantic langchain-valyu
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/hybrid-ai-tutor-security.git
+git clone https://github.com/nav727/Great_Agent_Hack_2025_EduAI.git
 cd hybrid-ai-tutor-security
 
 # Install dependencies
