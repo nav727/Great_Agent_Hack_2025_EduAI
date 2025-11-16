@@ -685,12 +685,6 @@ python complete_hybrid_system_with_metrics.py --verbose
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
 ## 🙏 Acknowledgments
 
 - **ArXiv** for open access to research papers
@@ -698,13 +692,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Anthropic** for Claude AI model
 - **Research Community** for adversarial ML insights
 
----
-
-## 📞 Contact
-
-- **Issues**: [GitHub Issues](https://github.com/yourusername/hybrid-ai-tutor-security/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/hybrid-ai-tutor-security/discussions)
-- **Email**: your.email@example.com
 
 ---
 
