@@ -11,7 +11,13 @@ PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 if PROJECT_ROOT not in sys.path:
     sys.path.append(PROJECT_ROOT)
 
-from complete_system import AITutorSystem  # type: ignore
+try:
+	from complete_hybrid_system import CompleteHybridSystem  # type: ignore
+	_AI_SYSTEM_CLS = CompleteHybridSystem
+except Exception:
+	# Fallback to previous minimal system if import fails
+	from complete_system import AITutorSystem  # type: ignore
+	_AI_SYSTEM_CLS = AITutorSystem
 
 
 class ChatRequest(BaseModel):
@@ -39,7 +45,10 @@ app.add_middleware(
 )
 
 # Initialize system once
-ai_system = AITutorSystem(mode="production")
+try:
+	ai_system = _AI_SYSTEM_CLS()  # CompleteHybridSystem has no mode arg
+except TypeError:
+	ai_system = _AI_SYSTEM_CLS(mode="production")
 
 
 @app.get("/")
