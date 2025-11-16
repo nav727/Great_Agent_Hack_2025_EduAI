@@ -28,6 +28,8 @@ Developed during a hackathon, this system enables transparent and trustworthy re
 
 ---
 
+## Extract Zip File and open in VS Code from Final_submission/PRISM-X Proactive Research Intelligence with Supervision & Metrics.zip
+
 ## 🛠 Setup Instructions
 
 ### 1. Create and Activate Python Virtual Environment
@@ -94,6 +96,70 @@ python test_bedrock.py
 ```
 
 ---
+
+##Front End Example alongside first version of NOVA and testing of AEGIS resulting in two systems:
+
+🧪 Running Baseline and Complete Systems
+🔹 Naive Baseline System
+
+To run the baseline research generation pipeline:
+
+python naive_baseline_system.py
+
+
+This version runs NOVA without AEGIS X governance.
+
+Outputs are saved in /logs and /metrics.
+
+To view the results in the frontend UI:
+
+cd ui
+npm install      # Run once
+npm run dev
+
+
+Open your browser at http://localhost:5173
+ to see:
+
+Input prompt
+
+NOVA’s raw output
+
+Placeholder charts (no Guardian or Attacker active)
+
+🔹 Complete Governance System
+
+To run the full AEGIS X + NOVA pipeline:
+
+python complete_system_3.py
+
+
+This runs:
+
+NOVA research generation
+
+Guardian, Attacker, and Observer agent interventions
+
+Logging and scoring
+
+To view full outputs in the UI:
+
+cd ui
+npm install      # Run once
+npm run dev
+
+
+Visit http://localhost:5173
+
+The interface will show:
+
+Input prompt and system output
+
+Guardian action chart (safe / review / blocked)
+
+Attacker success/fail bar chart
+
+JSON logs for full trace
 
 ## 📁 Open the Final Submission
 
