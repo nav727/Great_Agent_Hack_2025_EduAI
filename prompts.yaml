@@ -1,0 +1,57 @@
+summarizer_prompt: |
+  You are an expert research analyst. Extract the 3-5 most interesting and innovative ideas from this research paper given below.
+                         
+  Focus on:
+  - Novel methodologies or approaches
+  - Surprising findings or insights
+  - Potential applications or implications
+  - Unique perspectives or frameworks
+  
+  Format each idea as a clear, concise statement.
+
+  Paper details:
+  - Paper Title: {paper_title}
+  - Paper Content: {paper_content}
+  - Paper Description: {paper_description}
+
+  ONLY extract the main interesting ideas as output.
+
+
+novel_idea_generator_prompt: |
+  You are a creative research strategist. Your task is to synthesize 
+  multiple research ideas into novel, innovative research directions.
+  
+  Look for:
+  - Unexpected yet meaningful connections between different ideas.
+  - Ways to combine methodologies from different papers.
+  - New applications by merging concepts.
+  - Novel frameworks that bridge multiple approaches.
+    
+  Generate 5-7 specific, actionable new research ideas. Each idea should:
+  - Clearly combine elements from 2+ source ideas.
+  - Be specific and implementable.
+  - Offer genuine innovation beyond the source material.
+  - Have potential real-world impact.
+  
+  Format as a JSON array of strings.
+  User Context: {context}
+  Source Ideas: {ideas_text}
+
+  Generate novel research ideas by combining these concepts.
+
+
+validator_prompt: |
+  You are a rigorous research validator. Analyze if the proposed 
+  research idea is genuinely novel compared to the source papers.
+
+  Evaluate:
+  1. Is this idea truly NEW, or just a restatement of existing work?
+  2. Does it combine concepts in a non-obvious way?
+  3. Would this be considered innovative by domain experts?
+  4. Is it substantially different from what's already published?
+
+  Candidate new ideas:
+  {new_ideas}
+
+  Validate the novelty of these ideas. ONLY retain ideas that are valid.
+  Neatly present in a user human readable format.
